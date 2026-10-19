@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171816" />
+    <meta
+      name="description"
+      content="Planify: encuentra lugares que te inspiran y crea un viaje que se sienta tuyo."
+    />
+    <title>Planify — Tu viaje empieza aquí</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind = {
+        theme: {
+          extend: {
+            colors: {
+              planify: {
+                ink: "#101a3d",
+                blue: "#1687d4",
+                mist: "#e9f4fb",
+                paper: "#f5f6f4"
+              }
+            },
+            fontFamily: {
+              sans: ["DM Sans", "sans-serif"],
+              display: ["Manrope", "sans-serif"]
+            }
+          }
+        }
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+
+  <body class="home-page">
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-stage">
+          <img
+            class="hero-photo is-active"
+            id="home-hero-image-a"
+            src=""
+            alt=""
+            fetchpriority="high"
+          />
+          <img class="hero-photo" id="home-hero-image-b" src="" alt="" />
+          <div class="hero-photo-shade"></div>
+          <div class="hero-stage-topline">
+            <div class="hero-brand-group">
+              <a class="hero-stage-brand" href="index.html" aria-label="Planify, inicio">
+                <span class="brand-symbol" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <path d="M16 28s10-8.9 10-17a10 10 0 1 0-20 0c0 8.1 10 17 10 17Z" />
+                    <circle cx="16" cy="11" r="3.2" />
+                    <path d="m12.2 19.5 3.8-2.3 3.8 2.3" />
+                  </svg>
+                </span>
+                <span>PLANIFY <span class="hero-brand-divider">/</span> TRAVEL JOURNAL</span>
+              </a>
+              <a class="hero-about-link" href="about.html">Sobre nosotros</a>
+            </div>
+          </div>
+
+          <div class="hero-copy">
+            <h1 id="hero-title">Japón</h1>
+            <p class="hero-intro" id="home-hero-description"></p>
+            <div class="hero-actions">
+              <a class="button button-primary" id="home-hero-link" href="destino.html?pais=japan">
+                <span id="home-hero-action-label">Explora Japón</span>
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M4 10h12m-5-5 5 5-5 5" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <nav class="hero-slide-rail" aria-label="Seleccionar destino">
+            <button type="button" data-home-slide="0" aria-label="Japón"></button>
+            <button type="button" data-home-slide="1" aria-label="Noruega"></button>
+            <button type="button" data-home-slide="2" aria-label="Colombia"></button>
+          </nav>
+
+          <nav class="hero-destination-stack" aria-label="Destinos destacados">
+            <div class="hero-destination-track">
+              <a class="hero-destination-card" href="destino.html?pais=japan" data-home-destination="japan">
+                <img class="hero-destination-image" src="" alt="" />
+                <span class="hero-destination-shade"></span>
+                <span class="hero-destination-copy">
+                  <strong>Japón</strong>
+                  <span class="hero-destination-arrow" aria-hidden="true">↗</span>
+                </span>
+              </a>
+              <a class="hero-destination-card" href="destino.html?pais=norway" data-home-destination="norway">
+                <img class="hero-destination-image" src="" alt="" />
+                <span class="hero-destination-shade"></span>
+                <span class="hero-destination-copy">
+                  <strong>Noruega</strong>
+                  <span class="hero-destination-arrow" aria-hidden="true">↗</span>
+                </span>
+              </a>
+              <a class="hero-destination-card" href="destino.html?pais=colombia" data-home-destination="colombia">
+                <img class="hero-destination-image" src="" alt="" />
+                <span class="hero-destination-shade"></span>
+                <span class="hero-destination-copy">
+                  <strong>Colombia</strong>
+                  <span class="hero-destination-arrow" aria-hidden="true">↗</span>
+                </span>
+              </a>
+            </div>
+          </nav>
+
+          <div class="hero-stage-footer">
+            <div class="hero-carousel-controls" role="group" aria-label="Cambiar destino destacado">
+              <button class="hero-carousel-arrow" type="button" data-home-prev aria-label="Destino anterior">
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M16 10H4m5 5-5-5 5-5" />
+                </svg>
+              </button>
+              <button class="hero-carousel-arrow" type="button" data-home-next aria-label="Siguiente destino">
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M4 10h12m-5-5 5 5-5 5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

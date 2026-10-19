@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#191711" />
+    <meta name="description" content="Explora paisajes de Japón con Planify." />
+    <title>Explora el destino — Planify</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+
+  <body class="destination-page">
+    <header class="destination-header">
+      <a class="brand destination-brand" href="index.html" aria-label="Planify, inicio">
+        <span class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M16 28s10-8.9 10-17a10 10 0 1 0-20 0c0 8.1 10 17 10 17Z" />
+            <circle cx="16" cy="11" r="3.2" />
+            <path d="m12.2 19.5 3.8-2.3 3.8 2.3" />
+          </svg>
+        </span>
+        <span>planify</span>
+      </a>
+      <a class="destination-back" href="index.html">
+        <span aria-hidden="true">←</span>
+        <span>Todos los destinos</span>
+      </a>
+    </header>
+
+    <main id="destination-main">
+      <section class="country-page" id="country-page" aria-labelledby="country-name">
+        <div class="country-hero">
+          <div class="country-hero-media" id="country-hero-media">
+            <img
+              class="country-hero-image is-active"
+              id="country-hero-image-a"
+              src=""
+              alt=""
+              fetchpriority="high"
+            />
+            <img
+              class="country-hero-image"
+              id="country-hero-image-b"
+              src=""
+              alt=""
+            />
+            <div class="country-hero-scrim"></div>
+            <div class="country-hero-copy">
+              <h1 id="country-name">Japón</h1>
+              <p class="hero-description" id="country-description"></p>
+            </div>
+            <div class="hero-image-credit" id="hero-image-credit">
+              <a id="hero-photo-credit" href="" target="_blank" rel="noreferrer" hidden></a>
+            </div>
+            <div class="hero-carousel-controls">
+              <button type="button" class="carousel-arrow" id="slide-previous" aria-label="Paisaje anterior">
+                <span aria-hidden="true">←</span>
+              </button>
+              <button type="button" class="carousel-arrow" id="slide-next" aria-label="Siguiente paisaje">
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+            <div class="hero-progress" aria-hidden="true">
+              <span id="hero-progress-bar"></span>
+            </div>
+          </div>
+        </div>
+
+        <section class="country-culture" id="country-culture" aria-labelledby="culture-title">
+          <div class="country-culture-heading">
+            <h2 id="culture-title"></h2>
+            <p class="country-culture-copy" id="culture-copy"></p>
+          </div>
+          <div class="culture-collage" id="culture-collage"></div>
+        </section>
+
+        <section class="country-landscape-section" id="country-landscapes" aria-labelledby="landscape-title">
+          <div class="country-gallery-heading" data-reveal>
+            <h2 id="landscape-title">Mira un poco<br />más de cerca.</h2>
+          </div>
+          <div class="country-photo-grid">
+            <figure class="country-photo-card country-photo-card--one" data-reveal>
+              <img id="country-photo-one" src="" alt="" loading="lazy" />
+              <figcaption><span id="country-photo-caption-one"></span></figcaption>
+            </figure>
+            <figure class="country-photo-card country-photo-card--two" data-reveal>
+              <img id="country-photo-two" src="" alt="" loading="lazy" />
+              <figcaption><span id="country-photo-caption-two"></span></figcaption>
+            </figure>
+          </div>
+          <p class="country-image-credits" id="country-image-credits" hidden></p>
+        </section>
+
+        <nav class="country-switcher" aria-label="Volver a todos los destinos">
+          <a class="switcher-home" href="index.html">
+            <span aria-hidden="true">←</span> Volver a todos los destinos
+          </a>
+        </nav>
+      </section>
+    </main>
+
+    <footer class="destination-footer">
+      <a class="brand destination-brand" href="index.html" aria-label="Planify, inicio">
+        <span class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M16 28s10-8.9 10-17a10 10 0 1 0-20 0c0 8.1 10 17 10 17Z" />
+            <circle cx="16" cy="11" r="3.2" />
+            <path d="m12.2 19.5 3.8-2.3 3.8 2.3" />
+          </svg>
+        </span>
+        <span>planify</span>
+      </a>
+      <span>Diseñado con intención por <strong>Andres Elias Bloom</strong></span>
+    </footer>
+  </body>
+</html>
